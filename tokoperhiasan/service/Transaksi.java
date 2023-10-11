@@ -15,8 +15,6 @@ public abstract class Transaksi {
         this.totalHarga = totalHarga;
     }
 
-    // Getter dan Setter
-
     public Date getTanggalTransaksi() {
         return tanggalTransaksi;
     }
@@ -33,7 +31,6 @@ public abstract class Transaksi {
         this.totalHarga = totalHarga;
     }
 
-    // Abstrak method yang akan diimplementasikan di kelas turunan
     public abstract void tampilkanDetailTransaksi();
 }
 

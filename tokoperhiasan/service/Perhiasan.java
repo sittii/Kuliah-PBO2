@@ -4,23 +4,24 @@
  */
 package com.mycompany.tokoperhiasan.service;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Perhiasan {
-    private  String nama;
+    private static int jumlahTotalPerhiasan = 0;
+    private final String nama;
     private double harga;
     private int stok;
-    
+
     public Perhiasan(String nama, double harga, int stok) {
         this.nama = nama;
         this.harga = harga;
         this.stok = stok;
-    }
-    
-    public String getNama() {
-        return nama;
+        jumlahTotalPerhiasan += stok;
     }
 
-    public void setNama(String nama) {
-        this.nama = nama;
+    public String getNama() {
+        return nama;
     }
 
     public double getHarga() {
@@ -30,7 +31,7 @@ public class Perhiasan {
     public void setHarga(double harga) {
         this.harga = harga;
     }
-    
+
     public int getStok() {
         return stok;
     }
@@ -38,12 +39,14 @@ public class Perhiasan {
     public void setStok(int stok) {
         this.stok = stok;
     }
-    
+
     public void kurangiStok() {
         if (stok > 0) {
             stok--;
         }
     }
+
+    public static int getJumlahTotalPerhiasan() {
+        return jumlahTotalPerhiasan;
+    }
 }
-
-

@@ -34,9 +34,9 @@ public class RiwayatTransaksi extends Transaksi {
 
     @Override
     public void tampilkanDetailTransaksi() {
-        System.out.println("Tanggal Transaksi: " + getTanggalTransaksi());
-        System.out.println("Nama Perhiasan: " + namaPerhiasan);
-        System.out.println("Jumlah: " + jumlah);
-        System.out.println("Total Harga: " + getTotalHarga());
+        System.out.println("Tanggal Transaksi : " + getTanggalTransaksi());
+        System.out.println("Nama Perhiasan : " + namaPerhiasan);
+        System.out.println("Jumlah : " + jumlah);
+        System.out.println("Total Harga : " + getTotalHarga());
     }
 }
